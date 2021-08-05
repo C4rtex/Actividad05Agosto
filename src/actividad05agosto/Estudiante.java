@@ -51,10 +51,10 @@ public class Estudiante extends Persona {
     public double promedio() {
 
         double values[] = new double[3];
-        values[0]=nota1;
-        values[1]=nota2;
-        values[2]=nota3;
-        int sum = 0;
+        values[0] = nota1;
+        values[1] = nota2;
+        values[2] = nota3;
+        double sum = 0;
         for (int i = 0; i < values.length; i++) {
             sum += values[i];
         }
@@ -62,9 +62,17 @@ public class Estudiante extends Persona {
         return average;
 
     }
-    public void imprimir(){
-        System.out.println("Nombre: "+nombre+"\nApellido: "+apellido+"\nCodigo: "+codigo+"\nnota 1: "+nota1+"\nnota 2: "+nota2+"\nnota 3: "+nota3
-                +"\nPromedio: "+promedio());
+
+    public void imprimir() {
+        System.out.println();
+        System.out.println("nombre: \t" + nombre);
+        System.out.println("apellido: \t" + apellido);
+        System.out.println("codigo: \t" + codigo);
+        System.out.println("nota 1: \t"+nota1);
+        System.out.println("nota 2: \t"+nota2);
+        System.out.println("nota 3: \t"+nota3);
+        System.out.printf("promedio: \t%.2f",promedio());
+        System.out.println("");
     }
 
 }

@@ -31,13 +31,13 @@ public class Actividad05Agosto {
         String codigo = entrada.nextLine();
         miEstudiante.setCodigo(codigo);
         System.out.print("Ingrese la nota 1: ");
-        double nota1 = entrada.nextInt();
+        double nota1 = entrada.nextDouble();
         miEstudiante.setNota1(nota1);
         System.out.print("Ingrese la nota 2: ");
-        double nota2 = entrada.nextInt();
+        double nota2 = entrada.nextDouble();
         miEstudiante.setNota2(nota2);
         System.out.print("Ingrese la nota 3: ");
-        double nota3 = entrada.nextInt();
+        double nota3 = entrada.nextDouble();
         miEstudiante.setNota3(nota3);
         
         miEstudiante.imprimir();
