@@ -18,28 +18,9 @@ public class Actividad05Agosto {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner entrada = new Scanner(System.in);
         Estudiante miEstudiante=new Estudiante();
         
-        System.out.print("Ingrese el nombre del estudiante: ");
-        String nombre = entrada.nextLine();
-        miEstudiante.setNombre(nombre);
-        System.out.print("Ingrese el apellido del estudiante: ");
-        String apellido = entrada.nextLine();
-        miEstudiante.setApellido(apellido);
-        System.out.print("Ingrese el codigo del estudiante: ");
-        String codigo = entrada.nextLine();
-        miEstudiante.setCodigo(codigo);
-        System.out.print("Ingrese la nota 1: ");
-        double nota1 = entrada.nextDouble();
-        miEstudiante.setNota1(nota1);
-        System.out.print("Ingrese la nota 2: ");
-        double nota2 = entrada.nextDouble();
-        miEstudiante.setNota2(nota2);
-        System.out.print("Ingrese la nota 3: ");
-        double nota3 = entrada.nextDouble();
-        miEstudiante.setNota3(nota3);
-        
+        miEstudiante.pedirDatos();
         miEstudiante.imprimir();
         
         

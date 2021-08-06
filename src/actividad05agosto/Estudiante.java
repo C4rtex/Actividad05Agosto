@@ -5,6 +5,8 @@
  */
 package actividad05agosto;
 
+import java.util.Scanner;
+
 /**
  *
  * @author carlo
@@ -68,11 +70,33 @@ public class Estudiante extends Persona {
         System.out.println("nombre: \t" + nombre);
         System.out.println("apellido: \t" + apellido);
         System.out.println("codigo: \t" + codigo);
-        System.out.println("nota 1: \t"+nota1);
-        System.out.println("nota 2: \t"+nota2);
-        System.out.println("nota 3: \t"+nota3);
-        System.out.printf("promedio: \t%.2f",promedio());
+        System.out.println("nota 1: \t" + nota1);
+        System.out.println("nota 2: \t" + nota2);
+        System.out.println("nota 3: \t" + nota3);
+        System.out.printf("promedio: \t%.2f", promedio());
         System.out.println("");
+    }
+
+    public void pedirDatos() {
+        Scanner entrada=new Scanner(System.in);
+        System.out.print("Ingrese el nombre del estudiante: ");
+        String nombre = entrada.nextLine();
+        this.nombre=nombre;
+        System.out.print("Ingrese el apellido del estudiante: ");
+        String apellido = entrada.nextLine();
+        this.apellido=apellido;
+        System.out.print("Ingrese el codigo del estudiante: ");
+        String codigo = entrada.nextLine();
+        this.codigo=codigo;
+        System.out.print("Ingrese la nota 1: ");
+        double nota1 = entrada.nextDouble();
+        this.nota1=nota1;
+        System.out.print("Ingrese la nota 2: ");
+        double nota2 = entrada.nextDouble();
+        this.nota2=nota2;
+        System.out.print("Ingrese la nota 3: ");
+        double nota3 = entrada.nextDouble();
+        this.nota3=nota3;
     }
 
 }
